@@ -20,6 +20,8 @@ matrix:
     - php: 5.5
       env: SYMFONY_VERSION='2.5.*'
     - php: 5.5
+      env: SYMFONY_VERSION='2.6.*'
+    - php: 5.5
       env: SYMFONY_VERSION='dev-master'
 
 install: composer install
