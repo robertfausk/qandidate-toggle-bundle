@@ -9,8 +9,17 @@ php:
   - hhvm-nightly
 
 matrix:
-    allow_failures:
-        - php: hhvm
-        - php: hhvm-nightly
+  allow_failures:
+    - php: hhvm
+    - php: hhvm-nightly
+  include:
+    - php: 5.5
+      env: SYMFONY_VERSION='2.3.*'
+    - php: 5.5
+      env: SYMFONY_VERSION='2.4.*'
+    - php: 5.5
+      env: SYMFONY_VERSION='2.5.*'
+    - php: 5.5
+      env: SYMFONY_VERSION='dev-master'
 
 install: composer install
