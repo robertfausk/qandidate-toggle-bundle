@@ -32,5 +32,3 @@ before_script:
 
 script:
   - phpunit --coverage-text
-
-install: composer install
